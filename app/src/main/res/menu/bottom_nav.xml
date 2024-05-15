@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/agents"
+        android:title="Agents"
+        android:icon="@drawable/agent_logo"/>
+    <item
+        android:id="@+id/weapons"
+        android:title="Weapons"
+        android:icon="@drawable/ic_android_black_24dp"/>
+</menu>

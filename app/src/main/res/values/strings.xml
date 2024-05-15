@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ValorantAPI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agent_profile_picture">Agent Profile Picture</string>
+    <string name="could_not_retrieve_list">Could not retrieve list</string>
+    <string name="weapon_image">Weapon Image</string>
+    <string name="agent_logo">Agent Logo</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/agentsFragment">
+
+    <fragment
+        android:id="@+id/agentsFragment"
+        android:name="com.example.valorantapi.ui.agent.AgentsFragment"
+        android:label="fragment_agents"
+        tools:layout="@layout/fragment_agents">
+        <action
+            android:id="@+id/action_agentsFragment_to_agentDetailsFragment"
+            app:destination="@id/agentDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/agentDetailsFragment"
+        android:name="com.example.valorantapi.ui.agent.AgentDetailsFragment"
+        android:label="fragment_agent_details"
+        tools:layout="@layout/fragment_agent_details" />
+
+    <fragment
+        android:id="@+id/weaponsFragment"
+        android:name="com.example.valorantapi.ui.weapon.WeaponsFragment"
+        android:label="fragment_weapons"
+        tools:layout="@layout/fragment_weapons" />
+</navigation>
