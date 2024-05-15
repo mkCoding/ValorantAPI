@@ -26,4 +26,7 @@
         android:name="com.example.valorantapi.ui.weapon.WeaponsFragment"
         android:label="fragment_weapons"
         tools:layout="@layout/fragment_weapons" />
+
+
+
 </navigation>

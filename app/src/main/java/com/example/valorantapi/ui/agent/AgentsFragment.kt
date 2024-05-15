@@ -12,6 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.valorantapi.R
 import com.example.valorantapi.data.api.ApiResponse
 import com.example.valorantapi.databinding.FragmentAgentsBinding
+import com.google.firebase.Firebase
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.analytics
+import com.google.firebase.analytics.logEvent
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -45,7 +49,16 @@ class AgentsFragment : Fragment() {
                                 )
 
                             )
-
+                            //checks when a user clicks on a specific element in your app
+//                            Firebase.analytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM) {
+//                                bundleOf(
+//                                    Pair(FirebaseAnalytics.Param.ITEM_ID , "232"),
+//                                    Pair(FirebaseAnalytics.Param.ITEM_NAME, "number"),
+//                                    Pair(FirebaseAnalytics.Param.CONTENT_TYPE, "button")
+//                                )
+//                            }
+                            // Crash our application
+                        //throw RuntimeException("Test Crash") // Force a crash
                         }
                     }
                 }
@@ -61,6 +74,9 @@ class AgentsFragment : Fragment() {
                 }
             }
         }
+
+
+
 
         // Inflate the layout for this fragment
         return root
