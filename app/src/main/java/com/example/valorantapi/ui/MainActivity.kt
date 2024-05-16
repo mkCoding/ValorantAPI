@@ -27,13 +27,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
 
     //Adding Firebase Analytics object
-//    private lateinit var firebaseAnalytics: FirebaseAnalytics
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this)
 
 
         val navHostFragment = supportFragmentManager
@@ -73,28 +74,20 @@ class MainActivity : AppCompatActivity() {
 //        }
 
 
-//        val crashButton = Button(this)
-//        crashButton.text = "Test Crash"
-//        crashButton.setOnClickListener {
-//            throw RuntimeException("Test Crash") // Force a crash
-//        }
-//
-//        addContentView(crashButton, ViewGroup.LayoutParams(
-//            ViewGroup.LayoutParams.MATCH_PARENT,
-//            ViewGroup.LayoutParams.WRAP_CONTENT))
+
 
 
 
 //
 //        //checks when a user clicks on a specific element in your app
-//        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM) {
+//        Firebase.analytics.logEvent(
+//            FirebaseAnalytics.Event.SELECT_CONTENT,
 //            bundleOf(
-//                Pair(FirebaseAnalytics.Param.ITEM_ID , "ivBackButton"),
-//                Pair(FirebaseAnalytics.Param.ITEM_NAME, "backbutton"),
-//                Pair(FirebaseAnalytics.Param.CONTENT_TYPE, "ImageView")
+//                FirebaseAnalytics.Param.ITEM_ID to "232",
+//                FirebaseAnalytics.Param.ITEM_NAME to "Number",
+//                FirebaseAnalytics.Param.CONTENT_TYPE to "Dummy",
 //            )
-//        }
-
+//        )
 
 
     }
