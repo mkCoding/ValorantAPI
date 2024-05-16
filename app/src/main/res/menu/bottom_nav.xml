@@ -9,4 +9,9 @@
         android:id="@+id/weapons"
         android:title="Weapons"
         android:icon="@drawable/ic_android_black_24dp"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"/>
 </menu>

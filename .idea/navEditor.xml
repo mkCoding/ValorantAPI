@@ -41,13 +41,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="loginActivity">
+                  <entry key="logoutFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="231" />
-                            <option name="y" value="-1" />
+                            <option name="x" value="237" />
+                            <option name="y" value="-36" />
                           </Point>
                         </option>
                       </LayoutPositions>

@@ -1,24 +1,16 @@
 package com.example.valorantapi.ui
 
-import android.opengl.Visibility
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.valorantapi.R
 import com.example.valorantapi.databinding.ActivityMainBinding
-import com.google.firebase.Firebase
-import com.google.firebase.FirebaseApp
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.analytics.analytics
-import com.google.firebase.analytics.logEvent
 import dagger.hilt.android.AndroidEntryPoint
-import java.lang.RuntimeException
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -43,12 +35,14 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         binding.bottomNavigationView.setupWithNavController(navController)
+        val intent = Intent(this, LoginActivity::class.java)
 
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.agents -> navController.navigate(R.id.agentsFragment)
                 R.id.weapons -> navController.navigate(R.id.weaponsFragment)
+                R.id.logout -> navController.navigate(R.id.logoutFragment)
                 else -> {}
 
             }

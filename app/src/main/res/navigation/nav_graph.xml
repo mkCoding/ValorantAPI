@@ -26,7 +26,11 @@
         android:name="com.example.valorantapi.ui.weapon.WeaponsFragment"
         android:label="fragment_weapons"
         tools:layout="@layout/fragment_weapons" />
-
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.valorantapi.ui.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
 
 
 </navigation>

@@ -61,9 +61,9 @@ class LoginActivity : AppCompatActivity() {
 
         binding.apply {
 
-            testCrash.setOnClickListener {
-                //Test Analytics in Firebase
+//            testCrash.setOnClickListener {
 
+//                //Test Analytics in Firebase
 //                Firebase.analytics.logEvent(
 //                    FirebaseAnalytics.Event.SELECT_CONTENT,
 //                    bundleOf(
@@ -72,12 +72,11 @@ class LoginActivity : AppCompatActivity() {
 //                        FirebaseAnalytics.Param.CONTENT_TYPE to "Dummy",
 //                    )
 //                )
-
-                //Test Crashlytics in Firebase
-//        throw RuntimeException("Test Crash") // Force a crash
-
-
-            }
+//
+//                //Test Crashlytics in Firebase
+//              //throw RuntimeException("Test Crash") // Force a crash
+//
+//            }
         }
 
 
